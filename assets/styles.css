@@ -1,0 +1,99 @@
+/* assets/styles.css */
+
+/* Enlever le menu Streamlit et le footer */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+/* Corps principal */
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* TITRES */
+h1, h2, h3 {
+    color: #4B2E2E !important; /* Marron foncé */
+}
+
+/* === SIDEBAR EN MARRON === */
+section[data-testid="stSidebar"] {
+    background-color: #4B2E2E !important;
+    color: white !important;
+}
+
+section[data-testid="stSidebar"] .css-1v0mbdj, /* texte normal */
+section[data-testid="stSidebar"] .css-1aumxhk, /* titres sidebar */
+section[data-testid="stSidebar"] .css-1cpxqw2, /* selectbox */
+section[data-testid="stSidebar"] .css-1fv8s86 {
+    color: white !important;
+}
+
+/* === BOUTONS === */
+button {
+    background-color: #4B2E2E !important;
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3b231c !important; /* Marron + foncé */
+    color: #fff !important;
+}
+
+/* === INPUTS === */
+input, select, textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* === CARDS AVEC COULEURS === */
+.card {
+    background-color: #fff5f0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: #4B2E2E;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* === TITRE DE CARTE === */
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #4B2E2E;
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #000;
+}
+/* === TEXTES, LABELS, SELECTBOX, INPUTS DANS LA SIDEBAR EN BLANC === */
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* Fix couleur du texte dans selectbox quand sélectionné */
+section[data-testid="stSidebar"] .stSelectbox div[role="button"] {
+    color: white !important;
+}
+
+/* Inputs dans la sidebar */
+section[data-testid="stSidebar"] input,
+section[data-testid="stSidebar"] select,
+section[data-testid="stSidebar"] textarea {
+    background-color: #5c3b3b !important;
+    color: white !important;
+    border: 1px solid #ccc;
+}
+
